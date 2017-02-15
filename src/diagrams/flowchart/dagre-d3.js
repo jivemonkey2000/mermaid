@@ -4,7 +4,7 @@ var log = new Logger.Log();
 
 var dagreD3;
 //log.debug('setting up dagre-d3');
-if (require) {
+if (typeof require === "function") {
   try {
     dagreD3 = require('dagre-d3');
       //log.debug('Got it (dagre-d3)');
